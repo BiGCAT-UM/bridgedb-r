@@ -1,14 +1,10 @@
 getSystemCode <- function(name){
-  datasource <- .jcall(
+#first make sure the standard datasources are instantiated
+ .jcall("org/bridgedb/bio/BioDataSource","V","init")
+ datasource <- .jcall(
 			"org/bridgedb/DataSource",
 			"Lorg/bridgedb/DataSource;",
-			"getByFullName",name )
-#  .jcall(
-#    datasource,
-#    "Ljava/lang/String",
-#    "getSystemCode"
-#  )
-   datasource
-   
+			"getByFullName",name)
+ datasource$getSystemCode() 
 }
   

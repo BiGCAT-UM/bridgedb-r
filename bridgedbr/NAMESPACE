@@ -1,5 +1,7 @@
 import("rJava")
 import("bridgedbrlibs")
-export(getSystemCode
+export(
+ getSystemCode,
+ getOrganismCode
 
 )

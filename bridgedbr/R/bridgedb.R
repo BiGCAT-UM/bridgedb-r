@@ -24,5 +24,5 @@ require(bridgedbrlibs, quietly=TRUE)
         Sys.setenv("DYLD_LIBRARY_PATH"=sub("/usr/X11R6/lib","",dlp))
     }
 
-    .jpackage(pkg, jars=c("org.bridgedb.jar"))
+#    .jpackage(pkg, jars=c("org.bridgedb.jar"))
 }
