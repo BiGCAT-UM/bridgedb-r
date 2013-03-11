@@ -3,6 +3,7 @@ import("bridgedbrlibs")
 export(
  getSystemCode,
  getOrganismCode,
- getBridgeNames
+ getBridgeNames,
+ getDatabase
 
 )

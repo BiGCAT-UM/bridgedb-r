@@ -23,6 +23,7 @@ require(bridgedbrlibs, quietly=TRUE)
     if (dlp!="") { # for Mac OS X we need to remove X11 from lib-path
         Sys.setenv("DYLD_LIBRARY_PATH"=sub("/usr/X11R6/lib","",dlp))
     }
-
+#make sure the biodatasources are instantiated
+.jcall("org/bridgedb/bio/BioDataSource","V","init")
 #    .jpackage(pkg, jars=c("org.bridgedb.jar"))
 }
