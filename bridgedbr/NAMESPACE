@@ -4,6 +4,6 @@ export(
  getSystemCode,
  getOrganismCode,
  getBridgeNames,
- getDatabase
-
+ getDatabase,
+ getMatchingSources
 )
