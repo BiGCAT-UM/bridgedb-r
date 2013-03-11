@@ -25,5 +25,4 @@ require(bridgedbrlibs, quietly=TRUE)
     }
 #make sure the biodatasources are instantiated
 .jcall("org/bridgedb/bio/BioDataSource","V","init")
-#    .jpackage(pkg, jars=c("org.bridgedb.jar"))
 }
