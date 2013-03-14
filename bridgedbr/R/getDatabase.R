@@ -18,7 +18,7 @@ getDatabase <- function(organism,location=NA) {
   }
   j = j+1
  }
- url = paste("http://bridgedb.org/data/gene_database/archive/",names[c],sep="")
+ url = paste("http://bridgedb.org/data/gene_database/",names[c],sep="")
  file = paste(location,"/",name,sep="")
  download.file(url,file)
  file
