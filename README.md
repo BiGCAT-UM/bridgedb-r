@@ -7,6 +7,9 @@ Read about BridgeDb in this paper:
 
 Van Iersel, M.;  Pico, A.;  Kelder, T.;  Gao, J.;  Ho, I.;   Hanspers, K.;  Conklin, B.;  Evelo, C. BMC Bioinformatics 2010, 11, 5
 
+The source code of this package is available from:
+
+https://github.com/BiGCAT-UM/bridgedb-r
 
 Compiling and Installing
 ========================
