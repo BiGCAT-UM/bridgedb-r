@@ -1,4 +1,5 @@
 import("rJava")
+import("RCurl")
 import("bridgedbrlibs")
 export(
  getSystemCode,
