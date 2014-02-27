@@ -24,7 +24,9 @@ require(rJava, quietly=TRUE)
     }
     libJars = c(
         "org.bridgedb.jar",
-        "org.bridgedb.bio.jar"
+        "org.bridgedb.bio.jar",
+        "org.bridgedb.rdb.jar",
+        "derby.jar"
     )
     .jpackage(pkg, jars=libJars)
 }
