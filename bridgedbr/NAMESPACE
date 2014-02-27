@@ -7,5 +7,7 @@ export(
  getBridgeNames,
  getDatabase,
  getMatchingSources,
- getFullName
+ getFullName,
+ getDataSource,
+ map
 )
