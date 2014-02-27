@@ -23,5 +23,4 @@ mapper <- loadDatabase(location)
 }
 \author{
 Egon Willighagen
-Christ Leemans
 }
