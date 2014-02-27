@@ -11,6 +11,8 @@ The source code of this package is available from:
 
 https://github.com/BiGCAT-UM/bridgedb-r
 
+License: AGPL-3
+
 Compiling and Installing
 ========================
 
