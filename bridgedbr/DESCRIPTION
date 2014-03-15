@@ -1,11 +1,11 @@
 Package: bridgedbr
 Type: Package
-Title: BridgeDBR - code for using BridgeDB from within R
+Title: BridgeDbR - code for using BridgeDb from within R
 Version: 1.0.0
 Date: 2012-11-27
-Author: Christ Leemans <christleemans@gmail.com>
-Maintainer: Christ Leemans <christleemans@gmail.com>
+Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen <egon.willighagen@gmail.com>
+Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 2.0.0), rJava, bridgedbrlibs (>= 1.1.0), RCurl
-Description: Use BridgeDB functions and load databases in R
+Description: Use BridgeDb functions and load identifier mapping databases in R
 License: AGPL-3
 LazyLoad: yes
