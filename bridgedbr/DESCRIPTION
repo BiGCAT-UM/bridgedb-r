@@ -7,5 +7,6 @@ Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen <egon.willigh
 Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 2.0.0), rJava, bridgedbrlibs (>= 1.1.0), RCurl
 Description: Use BridgeDb functions and load identifier mapping databases in R
+biocViews: Bioinformatics
 License: AGPL-3
 LazyLoad: yes
