@@ -106,8 +106,21 @@ method, you need to load the database for the identifier mappings to become avai
 mapper <- loadDatabase(dbLocation)
 @
 
+\section{Mapping Identifiers}
+
+With a loaded database, identifiers can be mapped. The mapping method uses system codes. So, to
+map the human Entrez Gene identifier (system code: L) 196410 to Affy identifiers (system code: X) we
+use:
+
+<<eval=FALSE>>=
+location <- getDatabase("Homo sapiens")
+mapper <- loadDatabase(location)
+map(mapper, "L", "196410", "X")
+@
+
+Mind you, this returns more than one identifier, as BridgeDb is generally a one to many mapping database.
+
 \bibliographystyle{abbrv}
 \bibliography{tutorial}
-
 
 \end{document}
