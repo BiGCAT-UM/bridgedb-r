@@ -30,6 +30,15 @@ To create the vignette:
 
     rm -f ./bridgedbr/inst/doc/tutorial.pdf; R CMD build bridgedbr; tar xvf bridgedbr_1.0.0.tar.gz bridgedbr/inst/doc/tutorial.pdf
 
+To install the packages from within R with the devtools package:
+
+    > install.packages("rJava") # if not present already
+    > install.packages("RCurl") # if not present already
+    > install.packages("devtools") # if not present already
+    > library(devtools)
+    > install_github("bridgedb-r", "BiGCAT-UM", subdir="bridgedbrlibs")
+    > install_github("bridgedb-r", "BiGCAT-UM", subdir="bridgedbr")
+
 Dependencies
 ============
 
