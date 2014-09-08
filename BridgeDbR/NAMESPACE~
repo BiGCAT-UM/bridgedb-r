@@ -1,0 +1,12 @@
+import("rJava")
+export(
+ getSystemCode,
+ getOrganismCode,
+ getBridgeNames,
+ getDatabase,
+ getMatchingSources,
+ getFullName,
+ getDataSource,
+ loadDatabase,
+ map
+)
