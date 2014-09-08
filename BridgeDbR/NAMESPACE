@@ -1,5 +1,5 @@
 import("rJava")
-import("RCurl")
+importFrom("RCurl","curlPerform")
 export(
  getSystemCode,
  getOrganismCode,
