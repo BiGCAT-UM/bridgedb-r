@@ -3,7 +3,7 @@ bridgedb-r
 
 R package for BridgeDb, a tool for identifier mapping.
 
-Read about BridgeDb in this paper:
+Learn about BridgeDb at http://www.bridgedb.org/ and read about it in this paper:
 
 Van Iersel, M.;  Pico, A.;  Kelder, T.;  Gao, J.;  Ho, I.;   Hanspers, K.;  Conklin, B.;  Evelo, C. BMC Bioinformatics 2010, 11, 5
 
@@ -16,13 +16,13 @@ License: AGPL-3
 Compiling and Installing
 ========================
 
-    R CMD check BridgDbR
-    R CMD build BridgDbR
+    R CMD build BridgeDbR
+    R CMD check BridgeDbR_x.y.z.tar.gz
     R CMD INSTALL BridgeDbR_x.y.z.tar.gz
 
 To create the vignette:
 
-    rm -f .//inst/doc/tutorial.pdf; R CMD build bridgedbr; tar xvf bridgedbr_1.0.0.tar.gz bridgedbr/inst/doc/tutorial.pdf
+    rm -f BridgeDbR/inst/doc/tutorial.pdf; R CMD build BridgeDbR; tar xvf BridgeDbR_0.99.1.tar.gz BridgeDbR/inst/doc/tutorial.pdf
 
 To install the packages from within R with the devtools package:
 
@@ -30,8 +30,7 @@ To install the packages from within R with the devtools package:
     > install.packages("RCurl") # if not present already
     > install.packages("devtools") # if not present already
     > library(devtools)
-    > install_github("bridgedb-r", "BiGCAT-UM", subdir="bridgedbrlibs")
-    > install_github("bridgedb-r", "BiGCAT-UM", subdir="bridgedbr")
+    > install_github("bridgedb-r", "BiGCAT-UM", subdir="BridgeDbR")
 
 Dependencies
 ============
