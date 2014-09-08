@@ -17,7 +17,7 @@
 \maketitle
 
 <<echo=FALSE, results=hide>>=
-library(bridgedbr)
+library(BridgeDbR)
 @
 
 \section{Introduction}
