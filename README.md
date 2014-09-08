@@ -16,19 +16,13 @@ License: AGPL-3
 Compiling and Installing
 ========================
 
-    R CMD check bridgedbrlibs
-    R CMD build bridgedbrlibs
-    R CMD check bridgedbrlibs_x.y.z.tar.gz
-    R CMD INSTALL bridgedbrlibs_x.y.z.tar.gz
-
-    R CMD check bridgedbr
-    R CMD build bridgedbr
-    R CMD check bridgedbr_x.y.z.tar.gz
-    R CMD INSTALL bridgedbr_x.y.z.tar.gz
+    R CMD check BridgDbR
+    R CMD build BridgDbR
+    R CMD INSTALL BridgeDbR_x.y.z.tar.gz
 
 To create the vignette:
 
-    rm -f ./bridgedbr/inst/doc/tutorial.pdf; R CMD build bridgedbr; tar xvf bridgedbr_1.0.0.tar.gz bridgedbr/inst/doc/tutorial.pdf
+    rm -f .//inst/doc/tutorial.pdf; R CMD build bridgedbr; tar xvf bridgedbr_1.0.0.tar.gz bridgedbr/inst/doc/tutorial.pdf
 
 To install the packages from within R with the devtools package:
 
