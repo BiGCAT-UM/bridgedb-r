@@ -16,8 +16,8 @@ License: AGPL-3
 Compiling and Installing
 ========================
 
-    R CMD check BridgDbR
-    R CMD build BridgDbR
+    R CMD check BridgeDbR
+    R CMD build BridgeDbR
     R CMD INSTALL BridgeDbR_x.y.z.tar.gz
 
 To create the vignette:

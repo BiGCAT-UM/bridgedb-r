@@ -17,12 +17,12 @@
 \maketitle
 
 <<echo=FALSE, results=hide>>=
-library(bridgedbr)
+library(BridgeDbR)
 @
 
 \section{Introduction}
 
-BridgeDb is a combination of an application programming interface (API), library, and set of data files
+BridgeDb \url{https://github.com/bridgedb/BridgeDb} is a combination of an application programming interface (API), library, and set of data files
 for mapping identifiers for identical objects~\cite{VanIersel2010}. Because BridgeDb is use by projects
 in bioinformatics, like WikiPathways and PathVisio~\cite{Pico2008,VanIersel2008},
 identifier mapping databases are available for gene products and metabolites.
