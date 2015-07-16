@@ -18,7 +18,9 @@ Available from Bioconductor
 To install this package, start R and enter:
 
 source("http://bioconductor.org/biocLite.R")
+
 biocLite("BridgeDbR")
+
 
 To view documentation for the version of this package installed in your system, start R and enter:
 
