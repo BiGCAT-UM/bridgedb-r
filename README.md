@@ -45,7 +45,7 @@ To install the packages from within R with the devtools package:
     > install.packages("RCurl") # if not present already
     > install.packages("devtools") # if not present already
     > library(devtools)
-    > install_github("bridgedb-r", "BiGCAT-UM", subdir="BridgeDbR")
+    > install_github("BiGCAT-UM/bridgedb-r", subdir="BridgeDbR")
 
 Dependencies
 ============
