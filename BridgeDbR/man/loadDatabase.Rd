@@ -13,7 +13,7 @@ loadDatabase(location)
  \item{location}{location on the hard disk of the BridgeDb file}
 }
 \value{
- \item{mapper}{the system code of the data source}
+ \item{mapper}{an IDMapper object}
 }
 \examples{
 \dontrun{
