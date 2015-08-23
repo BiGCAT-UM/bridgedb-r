@@ -17,14 +17,12 @@ Available from Bioconductor
 ===========================
 To install this package, start R and enter:
 
-source("http://bioconductor.org/biocLite.R")
-
-biocLite("BridgeDbR")
-
+    source("http://bioconductor.org/biocLite.R")
+    biocLite("BridgeDbR")
 
 To view documentation for the version of this package installed in your system, start R and enter:
 
-browseVignettes("BridgeDbR")
+    browseVignettes("BridgeDbR")
 
 http://www.bioconductor.org/packages/release/bioc/html/BridgeDbR.html
  
