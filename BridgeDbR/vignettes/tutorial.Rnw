@@ -22,23 +22,27 @@ library(BridgeDbR)
 
 \section{Introduction}
 
-BridgeDb \url{https://github.com/bridgedb/BridgeDb} is a combination of an application programming interface (API), library, and set of data files
-for mapping identifiers for identical objects~\cite{VanIersel2010}. Because BridgeDb is use by projects
-in bioinformatics, like WikiPathways and PathVisio~\cite{Pico2008,VanIersel2008},
-identifier mapping databases are available for gene products and metabolites.
+BridgeDb \url{https://github.com/bridgedb/BridgeDb} is a combination of an
+application programming interface (API), library, and set of data files
+for mapping identifiers for identical objects~\cite{VanIersel2010}. Because
+BridgeDb is use by projects in bioinformatics, like WikiPathways and
+PathVisio~\cite{Pico2008,VanIersel2008}, identifier mapping databases are
+available for gene products and metabolites.
 
 \section{Concepts}
 
-BridgeDb has a few core concepts which are explained in this section. Much of the API requires one to
-be familiar with these concepts, though some are not always applicable. The first concept is an example
-of that: organisms, which do not apply to metabolites.
+BridgeDb has a few core concepts which are explained in this section. Much of
+the API requires one to be familiar with these concepts, though some are not
+always applicable. The first concept is an example of that: organisms, which do
+not apply to metabolites.
 
 \subsection{Organisms}
 
-However, for genes the organism is important: the same gene has different identifiers in different
-organisms. BridgeDb identifies organisms by their latin name and with a two character code. Because
-identifier mapping files provided by PathVisio have names with these short codes, it can be useful to
-have a conversion method:
+However, for genes the organism is important: the same gene has different
+identifiers in different organisms. BridgeDb identifies organisms by their latin
+name and with a two character code. Because identifier mapping files provided by
+PathVisio have names with these short codes, it can be useful to have a
+conversion method:
 
 <<>>=
 code = getOrganismCode("Rattus norvegicus")
@@ -47,13 +51,15 @@ code
 
 \subsection{Data Sources}
 
-Identifiers have a context and this context is often a database. For example, metabolite identfiers
-can be provided by the Human Metabolome Database (HMDB), ChemSpider, PubChem, and ChEBI. Similarly,
-gene product identifiers can be provided by databases like Ensemble. Such a database providing
-identifiers is in BridgeDb called a data source.
+Identifiers have a context and this context is often a database. For example,
+metabolite identfiers can be provided by the Human Metabolome Database (HMDB),
+ChemSpider, PubChem, and ChEBI. Similarly, gene product identifiers can be
+provided by databases like Ensemble. Such a database providing identifiers is in
+BridgeDb called a data source.
 
-Importantly, each such data source is identified by a human readable long name and by a short
-system code. This package has methods to interconvert one into the other:
+Importantly, each such data source is identified by a human readable long name
+and by a short system code. This package has methods to interconvert one into
+the other:
 
 <<>>=
 fullName <- getFullName("Ce")
@@ -64,9 +70,10 @@ code
 
 \subsection{Identifier Patterns}
 
-Another useful aspect of BridgeDb is that it knows about the patterns of identifiers. If this
-pattern is unique enough, it can be used used to automatically find the data sources that
-match a particular identifier. For example:
+Another useful aspect of BridgeDb is that it knows about the patterns of
+identifiers. If this pattern is unique enough, it can be used used to
+automatically find the data sources that match a particular identifier. For
+example:
 
 <<>>=
 getMatchingSources("HMDB00555")
@@ -75,10 +82,10 @@ getMatchingSources("ENSG00000100030")
 
 \section{Identifier Mapping Databases}
 
-The BridgeDb package primarily provides the software framework, and not identifier mapping
-data. Identifier Mapping databases can be downloaded from various websites. The package
-knows about the download location provided by PathVisio, and we can query for all gene
-product identifier mapping databases:
+The BridgeDb package primarily provides the software framework, and not
+identifier mapping data. Identifier Mapping databases can be downloaded from
+various websites. The package knows about the download location provided by
+PathVisio, and we can query for all gene product identifier mapping databases:
 
 <<>>=
 getBridgeNames()
@@ -86,21 +93,22 @@ getBridgeNames()
 
 \subsection{Downloading}
 
-The package provides
-a convenience method to download such identifier mapping databases. For example, we can save the
-identifier mapping database for rat to the current folder with:
+The package provides a convenience method to download such identifier mapping
+databases. For example, we can save the identifier mapping database for rat to
+the current folder with:
 
 <<eval=FALSE>>=
 dbLocation <- getDatabase("Rattus norvegicus",location=getwd())
 @
 
-The dbLocation variable then contains the location of the identifier mapping file that was
-downloaded.
+The dbLocation variable then contains the location of the identifier mapping
+file that was downloaded.
 
 \subsection{Loading Databases}
 
-Once you have downloaded an identifier mapping database, either manually or via the getDatabase()
-method, you need to load the database for the identifier mappings to become available.
+Once you have downloaded an identifier mapping database, either manually or via
+the getDatabase() method, you need to load the database for the identifier
+mappings to become available.
 
 <<eval=FALSE>>=
 mapper <- loadDatabase(dbLocation)
@@ -108,9 +116,9 @@ mapper <- loadDatabase(dbLocation)
 
 \section{Mapping Identifiers}
 
-With a loaded database, identifiers can be mapped. The mapping method uses system codes. So, to
-map the human Entrez Gene identifier (system code: L) 196410 to Affy identifiers (system code: X) we
-use:
+With a loaded database, identifiers can be mapped. The mapping method uses
+system codes. So, to map the human Entrez Gene identifier (system code: L)
+196410 to Affy identifiers (system code: X) we use:
 
 <<eval=FALSE>>=
 location <- getDatabase("Homo sapiens")
@@ -118,7 +126,8 @@ mapper <- loadDatabase(location)
 map(mapper, "L", "196410", "X")
 @
 
-Mind you, this returns more than one identifier, as BridgeDb is generally a one to many mapping database.
+Mind you, this returns more than one identifier, as BridgeDb is generally a one
+to many mapping database.
 
 \bibliographystyle{abbrv}
 \bibliography{tutorial}

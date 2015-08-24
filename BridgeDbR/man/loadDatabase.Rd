@@ -1,10 +1,12 @@
 \name{loadDatabase}
 \alias{loadDatabase}
 \title{
-Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper object.
+Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
+object.
 }
 \description{
-Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper object.
+Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
+object.
 }
 \usage{
 loadDatabase(location)
