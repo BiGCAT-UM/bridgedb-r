@@ -126,8 +126,14 @@ mapper <- loadDatabase(location)
 map(mapper, "L", "196410", "X")
 @
 
-Mind you, this returns more than one identifier, as BridgeDb is generally a one
-to many mapping database.
+Mind you, while we ask for one target database, this may still return more than
+one identifier, as BridgeDb is generally a one to many mapping database.
+
+To get all mapped identifiers, just leave out the target:
+
+<<eval=FALSE>>=
+map(mapper, "L", "196410")
+@
 
 \bibliographystyle{abbrv}
 \bibliography{tutorial}
