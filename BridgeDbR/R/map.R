@@ -5,7 +5,7 @@ map <- function(mapper, source, identifier, target=NULL){
     datatarget <- getDataSource(code=target)
     targets = .jarray(c(datatarget), contents.class="org/bridgedb/DataSource")
   } else {
-    targets = .jarray(c(), contents.class="org/bridgedb/DataSource")
+    targets = .jarray(list(), contents.class="org/bridgedb/DataSource")
   }
   mappings = mapper$mapID(xref, targets)
   str <- strsplit(mappings$toString(),"\\[")
