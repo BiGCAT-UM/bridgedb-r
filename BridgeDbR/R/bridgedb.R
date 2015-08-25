@@ -16,5 +16,5 @@ require(rJava, quietly=TRUE)
     	)
     .jpackage(pkg, jars=libJars)
 #make sure the biodatasources are instantiated
-.jcall("org/bridgedb/bio/BioDataSource","V","init")
+.jcall("org/bridgedb/bio/DataSourceTxt","V","init")
 }
