@@ -19,7 +19,9 @@ getBridgeNames(code)
  \item{list}{the list of available BridgeDb mapping files}
 }
 \examples{
+\dontrun{
 files <- getBridgeNames("Hs")
+}
 }
 \author{
 Egon Willighagen
