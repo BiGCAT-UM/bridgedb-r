@@ -25,9 +25,9 @@ getBridgeNames(code, website, pattern)
 \examples{
 \dontrun{
 files <- getBridgeNames("Hs")
-prereleases <- getBridgename(
+prereleases <- getBridgeNames(
     website="http://bridgedb.org/data/gene_database/pre-release/",
-    pattern="Hs_Derby_Ensembl_\\d{2}_v\\d.\\d*.bridge"
+    pattern="metabolites_\\d*.bridge"
 )
 }
 }
