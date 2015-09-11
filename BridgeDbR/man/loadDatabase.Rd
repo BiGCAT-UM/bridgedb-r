@@ -18,10 +18,8 @@ loadDatabase(location)
  \item{mapper}{an IDMapper object}
 }
 \examples{
-\dontrun{
-location <- getDatabase("Homo sapiens")
+location <- getDatabase("Mycobacterium tuberculosis")
 mapper <- loadDatabase(location)
-}
 }
 \author{
 Egon Willighagen

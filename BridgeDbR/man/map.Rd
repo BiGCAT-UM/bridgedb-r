@@ -19,12 +19,10 @@ map(mapper, source, identifier, target)
  \item{mappings}{a vector of mapped identifiers for the target data source}
 }
 \examples{
-\dontrun{
-location <- getDatabase("Homo sapiens")
+location <- getDatabase("Mycobacterium tuberculosis")
 mapper <- loadDatabase(location)
-map(mapper, "L", "196410", "X")
-map(mapper, "L", "196410")
-}
+map(mapper, "L", "885041", "X")
+map(mapper, "L", "885041")
 }
 \author{
 Egon Willighagen
