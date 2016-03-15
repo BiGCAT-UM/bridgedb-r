@@ -2,11 +2,15 @@
 \alias{loadDatabase}
 \title{
 Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
-object.
+Java-Object.
 }
 \description{
 Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
-object.
+Java-Object.
+}
+\details{The return Java-Object is a Java class implementing the BridgeDb
+IDMapper interface. It is the required mapper class that is used as input
+for other methods that need an IDMapper.
 }
 \usage{
 loadDatabase(location)
