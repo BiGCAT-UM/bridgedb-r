@@ -1,3 +1,27 @@
+CHANGES IN VERSION 1.3.3
+------------------------
+
+BUG FIXED
+
+    o fixed returning of GO mappings (Lars Eijssen)
+
+CHANGES IN VERSION 1.3.2
+------------------------
+
+BUG FIXED
+
+    o fixed the getting for BridgeDb database names for recent download server
+      updates
+    o added better documentation for loadDatabase()
+
+CHANGES IN VERSION 1.3.1
+------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Depend on R 3.2
+
+
 CHANGES IN VERSION 1.3.0
 ------------------------
 
