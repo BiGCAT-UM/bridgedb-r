@@ -10,7 +10,7 @@ Depends: R (>= 3.2.0), rJava
 Imports: RCurl
 Suggests: testthat
 Description: Use BridgeDb functions and load identifier mapping databases in R.
-biocViews: Software, Annotation
+biocViews: Software, Annotation, Metabolomics, Cheminformatics
 License: AGPL-3
 LazyLoad: yes
 URL: https://github.com/bridgedb/BridgeDb, https://github.com/BiGCAT-UM/bridgedb-r
