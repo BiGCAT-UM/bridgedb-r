@@ -1,3 +1,55 @@
+CHANGED IN VERSION 1.9.3
+------------------------
+
+NEW FEATURES
+
+    o adds a method to register a new DataSource
+    o adds methods to see if a DataSource exists, based
+      on the full name and system code
+
+BUG FIXES
+
+    o Updated file pattern for getBridgeNames()
+
+CHANGED IN VERSION 1.7.2
+------------------------
+
+NEW FEATURES
+
+    o Now has a test suite
+
+SIGNIFICANT USER-LEVEL CHANGES
+
+    o Depends on R 3.3
+
+BUG FIXES
+
+    o Bug fixes introduced in versions 1.3.2 and 1.3.3
+
+CHANGES IN VERSION 1.3.3
+------------------------
+
+BUG FIXED
+
+    o fixed returning of GO mappings (Lars Eijssen)
+
+CHANGES IN VERSION 1.3.2
+------------------------
+
+BUG FIXED
+
+    o fixed the getting for BridgeDb database names for recent download server
+      updates
+    o added better documentation for loadDatabase()
+
+CHANGES IN VERSION 1.3.1
+------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Depend on R 3.2
+
+
 CHANGES IN VERSION 1.3.0
 ------------------------
 

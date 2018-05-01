@@ -1,5 +1,6 @@
 import("rJava")
 importFrom("RCurl","curlPerform", "basicTextGatherer")
+importFrom("utils", "download.file")
 export(
  getSystemCode,
  getOrganismCode,
@@ -8,7 +9,10 @@ export(
  getMatchingSources,
  getFullName,
  getDataSource,
+ registerDataSource,
  loadDatabase,
- map
+ map,
+ fullNameExists,
+ systemCodeExists
 )
 
